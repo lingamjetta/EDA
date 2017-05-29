@@ -19,10 +19,25 @@ Data was visualised based on the type of variable
 i) Discrete 
 ii) continous 
 with this we have different combinations
-i)univariant anlysis
-ii)Bivariant analysis
-### Univariant analysis
-### continous variable
+
+#### i)univariant anlysis
+#### 1)continous 
+For continous variable we have different plots
+1)histogram
+2)frequency
+3)dotplot
+4)density plot
+#### 2)Discrete varibale
+1)barchart
+2)pie chart
+### ii)Bivariant analysis
+### 1) continious v/s continous
+for cont.v/s cont.
+i)scatter plot
+ii) lineplot
+### 2) cont.v/s discret
+i)boxplot
+ii) side by side bar graph
 ### Histogram 
 ggplot(mpg,aes(hwy))+geom_histogram(binwidth = 0.1)
 ![hist](https://cloud.githubusercontent.com/assets/24644939/26559738/0f5b0c82-44cf-11e7-8317-b76ac68eef73.png)
@@ -31,4 +46,8 @@ note: if we are not add the binwidth explicitly we get an error that stat_bin '3
 frequency plot is same like line plot it plot using the geom_frqplot()
 ggplot(mpg,aes(hwy))+geom_freqpoly(binwidth=0.3,color="Red")
 
+### dotplot
+Dotplot used plot the contnous varbale using geom_dotplot()
+ggplot(mpg,aes(hwy))+geom_dotplot(binwidth = 0.1)
+ 
 
