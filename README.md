@@ -25,3 +25,10 @@ ii)Bivariant analysis
 ### continous variable
 ### Histogram 
 ggplot(mpg,aes(hwy))+geom_histogram(binwidth = 0.1)
+![hist](https://cloud.githubusercontent.com/assets/24644939/26559738/0f5b0c82-44cf-11e7-8317-b76ac68eef73.png)
+note: if we are not add the binwidth explicitly we get an error that stat_bin '30' choose different value
+### frequency plot
+frequency plot is same like line plot it plot using the geom_frqplot()
+ggplot(mpg,aes(hwy))+geom_freqpoly(binwidth=0.3,color="Red")
+
+
